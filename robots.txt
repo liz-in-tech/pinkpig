@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://liz-in-tech.github.io/pinkpig/sitemap.xml
