@@ -74,7 +74,9 @@ lightbulb 电灯
 star 五角星
 
 ## 单独页面设置
+
 Note:总体配置在.vuepress下，每个页面可以进行单独设置，与总体设置不一样
+```
 ---
 article: false # 是否是文章
 title: 布局与功能禁用 # 标题
@@ -98,6 +100,7 @@ comment: false # 评论
 footer: false # 页脚
 backtotop: false # 返回顶部按钮
 ---
+```
 
 ## 自定义布局
 布局包括:
