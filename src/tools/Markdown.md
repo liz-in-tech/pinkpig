@@ -2,7 +2,12 @@
 icon: lightbulb
 ---
 # Markdown
+## 对勾&打叉
+&#10005;  
+&#10003;
 
+## 链接
+[OpenAI:A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)
 ## md基本语法
 
 引用：>大于号  

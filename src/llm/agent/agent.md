@@ -27,3 +27,14 @@ Claude 3.5 Sonnet升级版便是Claude进一步Agent化的结果，大模型的�
 
 ## LangChain Agent生态
 ![alt text](image.png)
+
+## CoT 与 ReAct
+CoT:Reasoning
+用llm自身的能力做思维链，仅依赖模型本身的知识，不会用工具
+Act-Only: Act
+ReAct = Reasoning + Act
+在思维链基础上加上工具的使用，交替思考和行动，思考->行动->思考->行动..
+
+ReAct的实现核心是Prompt的定义
+
+

@@ -20,11 +20,12 @@ Two basic sentence components: subject + verb
 The core of English grammar: verb
 
 ### 1.2. Verb Classification (Predicate Verbs and Non-Predicate Verbs)
-- Predicate Verbs
-  - Infinitive (do)
-- Non-Predicate Verbs
-  - To + Indinitive (to do)
-  - Gerund (doing)
+- Predicate Verbs（谓语动词）
+  - do
+- Non-Predicate Verbs（非谓语动词）
+  - to do (不定式：将要)
+  - doing（现在分词：主动/进行）
+  - done（过去分词：被动/完成）
 
 ### 1.3. Five Predicate Verbs and Five Simple Sentences
 Five Predicate Verbs
@@ -160,6 +161,9 @@ Eight Elements of Sentences (8)
   - How much **chocolate** do you eat?
 - How + Adjective
   - How **old** are you?
+
+### 1.8. prefix
+![](images/prefix.jpg)
 
 ## 2. English Detail Grammar
 ### 2.1. Nouns
