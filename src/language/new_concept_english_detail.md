@@ -6,7 +6,43 @@ category:
 tag:
   - Grammar
 ---
-# New Concept English
+# New Concept English Sentences
+## Summary
+总结：
+- 句式
+  - 定语从句:that/省略that/which/who/where
+  - 名词性从句
+    - 主语从句：why
+    - 宾语从句:that / 省略that / whether
+    - 同位语从句:that
+  - 状语从句
+    - 时间状语从句:when/as/in/for/whenever/during/after+句子/ after+非谓语动词 / while / until / every time
+    - 地点状语从句:in/at/where/wherever
+    - 条件状语从句:unless / if
+    - 原因状语从句:for/as
+    - 方式状语从句：as(正如，如同，好像)
+    - 让步状语从句：though / even if / whatever
+    - 比较状语从句：than / while
+  - 并列句:and / but / not only..but
+  - 转折词:however
+  - 让步状语短语：despite
+    - Despite" 是一个介词，后面不跟句子，通常接名词或动名词，构成让步状语短语
+  - 非谓语动词：非谓语动词做后置定语 / 介词+非谓语动词 / 非谓语动词做状语
+  - 介词短语做后置定语:on
+  - 被动语态
+  - 形式主语：It has been said that / it may be possible to do sth / It is （almost/quite） impossible to do sth / it is extremely difficult to do sth / It was revealed that
+  - 形式宾语：make it possible to do sth
+  - there be
+- 时态
+  - 一般现在时
+  - 现在进行时
+  - 现在完成时
+  - 一般过去时
+  - 过去进行时
+  - 过去完成时
+  - 过去将来时
+  - 一般将来时
+
 ## Lesson1
 Paragraph1
 1. Pumas are large, cat-like animals which are found in America.
@@ -147,14 +183,14 @@ Paragraph2
 - 句式
   - 定语从句：which/省略that
   - 名词性从句
-    - 形式主语： It has been said that / it may be possible to do sth / it is extremely difficult to do sth
-    - 形式宾语：make it possible to do sth
     - 宾语从句：that
   - 状语从句
     - 时间状语从句：when
     - 让步状语从句：though
     - 比较状语从句：than
   - 并列句：and / but
+  - 形式主语： It has been said that / it may be possible to do sth / it is extremely difficult to do sth
+  - 形式宾语：make it possible to do sth
   - there be
   - 非谓语动词：介词+非谓语动词
 - 时态
