@@ -16,8 +16,8 @@ tag:
     - 宾语从句:that / 省略that / whether
     - 同位语从句:that
   - 状语从句
-    - 时间状语从句:when/as/in/for/whenever/during/after+句子/ after+非谓语动词 / while / until / every time
-    - 地点状语从句:in/at/where/wherever
+    - 时间状语从句:when / whenever / as / while / until / every time /after+句子 / after+非谓语动词
+    - 地点状语从句:where / wherever
     - 条件状语从句:unless / if
     - 原因状语从句:for/as
     - 方式状语从句：as(正如，如同，好像)
@@ -43,6 +43,18 @@ tag:
   - 过去将来时
   - 一般将来时
 
+### that vs which
+- **"that"** 通常用于限制性定语从句，提供必要的信息。
+- **"which"** 通常用于非限制性定语从句，提供附加信息。
+
+在选择which和that时，可以遵循以下原则：
+
+根据定语从句的类型选择：在限定性定语从句中，可以选择which或that，但that在正式书面语中更为常见。在非限定性定语从句中，通常只使用which。
+
+注意语境和风格：在正式写作中，that通常用于限定性定语从句，而which则用于非限定性定语从句。在口语中，选择较为灵活。
+
+避免介词与that的搭配：在介词后面，不使用that，而使用which。例如：The table on which I put my book is over there.（我放书的那张桌子在那边。）
+
 ## Lesson1
 Paragraph1
 1. Pumas are large, cat-like animals which are found in America.
@@ -60,34 +72,34 @@ Paragraph1
 
 Paragraph2
 1. The hunt for the puma began in a small village where a woman picking blackberries saw 'a large cat' only five yards away from her.
-- 句式：地点状语从句in+定语从句where+非谓语动词picking
+- 句式：定语从句where+非谓语动词picking
   - 非谓语动词做后置定语（现在分词表进行）
 - 时态：一般过去时
-2. It immediately ran away when she saw it, and experts confirmed that a puma will not attack a human being unless it is cornered.
+1. It immediately ran away when she saw it, and experts confirmed that a puma will not attack a human being unless it is cornered.
 - 句式：时间状语从句when+宾语从句that+条件状语从句unless
 - 时态：一般过去时+一般将来时+一般现在时
-3. The search proved difficult, for the puma was often observed at one place in the morning and at another place twenty miles away in the evening.
-- 句式：原因状语从句for+被动语态observed+时间地点状语从句(at/in)
+1. The search proved difficult, for the puma was often observed at one place in the morning and at another place twenty miles away in the evening.
+- 句式：原因状语从句for+被动语态observed
 - 时态：一般过去时
-4. Wherever it went, it left behind it a trail of dead deer and small animals like rabbits.
+1. Wherever it went, it left behind it a trail of dead deer and small animals like rabbits.
 - 句式：地点状语从句wherever
 - 时态：一般过去时
-5. Paw prints were seen in a number of places and puma fur was found clinging to bushes.
-- 句式：并列句and+地点状语从句in+被动语态（seen/found）
+1. Paw prints were seen in a number of places and puma fur was found clinging to bushes.
+- 句式：并列句and+被动语态（seen/found）
 - 时态：一般过去时
-6. Several people complained of "cat-like noises' at night and a businessman on a fishing trip saw the puma up a tree.
+1. Several people complained of "cat-like noises' at night and a businessman on a fishing trip saw the puma up a tree.
 - 句式：并列句and+介词短语做后置定语on
 - 时态：一般过去时
-7. The experts were now fully convinced that the animal was a puma, but where had it come from?
+1. The experts were now fully convinced that the animal was a puma, but where had it come from?
 - 句式：宾语从句that+并列句but
 - 时态：一般过去时
-8. As no pumas had been reported missing from any zoo in the country, this one must have been in the possession of a private collector and somehow managed to escape.
+1. As no pumas had been reported missing from any zoo in the country, this one must have been in the possession of a private collector and somehow managed to escape.
 - 句式：原因状语从句as
 - 时态：过去完成时+一般过去时+must
-9.  The hunt went on for several weeks, but the puma was not caught.
+1.  The hunt went on for several weeks, but the puma was not caught.
 - 句式：并列句but+被动语态caught
 - 时态：一般过去时
-10. It is disturbing to think that a dangerous wild animal is still at large in the quiet countryside.
+1.  It is disturbing to think that a dangerous wild animal is still at large in the quiet countryside.
 - 句式：形式主语that
 - 时态：一般现在时
 
@@ -98,8 +110,8 @@ Paragraph2
     - 宾语从句:that
     - 同位语从句:that
   - 状语从句
-    - 时间状语从句:when/as/in
-    - 地点状语从句:in/at/wherever
+    - 时间状语从句:when/as
+    - 地点状语从句:wherever
     - 条件状语从句:unless
     - 原因状语从句:for/as
   - 并列句:and/but
@@ -119,8 +131,7 @@ Paragraph2
 - 句式
   - 定语从句:which/who
   - 状语从句
-    - 时间状语从句：in/for/whenever/during
-    - 地点状语从句：at
+    - 时间状语从句：whenever
     - 原因状语从句：for/as
   - 并列句：but/and
   - 非谓语动词做后置定语
