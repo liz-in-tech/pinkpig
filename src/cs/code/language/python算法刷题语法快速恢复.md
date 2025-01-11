@@ -6,16 +6,18 @@ icon: lightbulb
 and 与  
 or  或  
 not 非  
+in 包含
 is  等于（比较对象）  
 == 等于（比较值）  
 True  真  
 False 假  
 None 空  
 
-## 选择
+## 选择 if/elif/else
 n1 = int(num1[i]) if i >= 0 else 0  
 return True if len(stack) == 0 else False  
 if root in (None, p, q): return root  
+
 
 ## 循环
 while xxx:  
@@ -34,6 +36,17 @@ for L in range(2,n+1): # 长度
 res = "" # 1个变量  
 n1,n2,n3 = len(a1),len(a2),0 # 多个变量  
 slow = fast = head # 2个赋相同值  
+
+## main
+if __name__=='__main__':
+ pass
+
+## 定义类
+class LinkedNode:
+  def __init__(self,value=0):
+     self.value=value
+     self.prev=None
+     self.next=None
 
 ## 实例化对象 
 h = ListNode(0, None) # 前面不加new  
@@ -59,9 +72,15 @@ c.isalnum() # 是字母或数字
 
 ## 词典/哈希表
 dict = {} # 定义  
+dict = dict() # 定义
 dict[target-item] # 取值  
 dict[item] = index # 赋值  
 if target-item in dict # 判断key是否存在  
+dict.pop(key) # 去除
+
+orderedDict = collections.orderedDict()
+orderedDict.move_to_end(key)
+orderedDict.popitem(last=False)
 
 ## 字符串
 “00123”.lstrip(0) # 去掉前缀0  
@@ -105,4 +124,6 @@ q.append() # 入队
 ## 堆
 heapq  
 
+## 随机数
+random.choice(list) #从列表中随机选择一项
 
