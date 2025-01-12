@@ -86,6 +86,11 @@ category: # 分类
   - 使用指南
 tag: # 标签
   - 禁用
+
+author: false  
+word: true  
+date: 2022-01-11  
+
 navbar: false # 导航栏
 sidebar: false # 侧边栏
 
@@ -99,7 +104,13 @@ next: false # 下一篇
 comment: false # 评论
 footer: false # 页脚
 backtotop: false # 返回顶部按钮
+
+sticky: true # 置顶
+star: true # 星标
 ---
+
+# 标题
+<!-- more -->
 ```
 
 ## 自定义布局
