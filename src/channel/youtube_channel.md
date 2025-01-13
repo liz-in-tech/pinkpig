@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # Open Youtube Channel
 
 ## Reference Video
@@ -35,5 +38,5 @@ https://www.youtube.com/watch?v=zEcNHMosmrU&t=168s
   - channel->basic info->keywords
 
 请帮我写出一些频道的关键词，每个词中间用逗号隔开，不要换行
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](images/image.png)
+![alt text](images/image-1.png)
