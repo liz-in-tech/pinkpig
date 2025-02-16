@@ -44,6 +44,7 @@ python --version
 ```
 python
 ```
+进入>>>后，退出python，用exit()或quit()
 
 ### 2.2. IDE和Jupyter
 
@@ -84,6 +85,101 @@ help(list)
 3、使用?和??查看API的用法文档
 
 在Jupyter记事本中，我们可以使用?指令在另一个浏览器窗口中显示文档。 例如，list?指令将创建与help(list)指令几乎相同的内容，并在新的浏览器窗口中显示它。 此外，如果我们使用两个问号，如list??，将显示实现该函数的Python代码。
+
+### 2.3. Python虚拟环境
+#### 2.3.1. 使用虚拟环境的好处
+使用单独的虚拟环境确实可能导致一些重复的库安装，从而占用更多的磁盘空间。然而，这种方法有几个重要的优点，使得它在大多数情况下是值得的：
+
+1. 依赖隔离：每个项目都有自己的依赖环境，确保项目之间不会因为依赖版本冲突而导致问题。这对于开发和部署多个项目尤其重要。
+2. 版本控制：您可以在不同的项目中使用不同版本的库，而不必担心它们之间的兼容性问题。
+3. 可移植性：通过使用 requirements.txt 文件，您可以轻松地在不同的环境中重现项目的依赖关系。
+4. 安全性：隔离的环境可以减少项目之间的相互影响，降低安全风险。
+
+#### 2.3.2. venv 和 conda 
+都是用于创建和管理虚拟环境的工具，但它们有一些关键的区别：
+
+- venv
+  - 内置工具: venv 是 Python 自带的模块，从 Python 3.3 开始就内置在标准库中。它不需要额外安装。
+  - 依赖管理: venv 主要用于隔离 Python 包的安装。它使用 pip 来安装和管理包。
+  轻量级: venv 是一个轻量级的工具，适合需要简单隔离 Python 包的场景。
+  - Python 版本: venv 只能创建与系统 Python 版本相同的虚拟环境。
+- conda
+  - 独立工具: conda 是 Anaconda 和 Miniconda 的一部分，需要单独安装。它不仅支持 Python，还支持其他语言（如 R）。
+  - 依赖管理: conda 是一个包管理器和环境管理器，能够管理 Python 包和其他软件包。它有自己的包管理系统，不依赖于 pip。
+  - 跨平台: conda 可以在 Windows、macOS 和 Linux 上使用，并且可以管理不同平台的依赖。
+  多版本支持: conda 可以创建不同 Python 版本的虚拟环境，这对于需要测试不同 Python 版本的项目非常有用。
+  - 更强的依赖解决能力: conda 使用 SAT 求解器来解决依赖关系，通常在处理复杂依赖时比 pip 更加可靠。
+
+#### 2.3.3. conda操作
+##### 2.3.3.1. what
+- Conda：conda是一个包管理器，也是一个可执行命令，其核心功能是包管理和环境管理，环境管理允许用户方便地安装不同版本的python并可以快速切换
+- Miniconda：它只包含最基本的内容——python与conda，以及相关的必须依赖项，对于空间要求严格的用户，Miniconda是一种选择
+- Anaconda拥有众多包和工具，，还有GUI界面
+
+conda与anaconda、miniconda的区别:
+![alt text](images/conda.png)
+![alt text](images/conda1.png)
+
+##### 2.3.3.2. How
+###### 2.3.3.2.1. 下载和安装
+下载地址：https://docs.conda.io/projects/conda/en/stable/
+
+mac也可以用Homebrew安装：brew install miniconda
+
+验证
+```
+conda --version
+```
+###### 2.3.3.2.2. 查看虚拟环境列表
+```
+conda env list
+```
+###### 2.3.3.2.3. 环境管理：创建、激活、退出虚拟环境
+创建
+```
+# 注：-n或--name可替代
+
+conda create -n {env_name} {python==3.7.5}
+
+示例
+conda create --name my_venv 
+conda create --name my_venv python=3.12
+```
+激活
+```
+conda activate my_venv
+```
+退出
+```
+conda deactivate
+```
+删除
+```
+conda remove -n my_venv --all
+```
+
+#### 2.3.4. venv操作
+创建虚拟环境，命名为venv_name，其中venv_name可以替换为其他名称
+```
+python -m venv venv_name
+```
+
+激活虚拟环境，激活的标志是前面多了(venv_name)标识，此时即可在虚拟环境中进行各种操作
+```
+source venv_name/bin/activate
+```
+
+退出虚拟环境
+```
+deactivate
+```
+#### 2.3.5. IDE的RUN按钮使用虚拟环境配置
+Visual Studio Code (VSCode)  
+选择解释器：  
+打开命令面板（Ctrl+Shift+P 或 Cmd+Shift+P）。  
+输入并选择 Python: Select Interpreter。  
+从列表中选择您的虚拟环境的 Python 解释器。  
+
 
 ## 3. 包管理工具pip
 

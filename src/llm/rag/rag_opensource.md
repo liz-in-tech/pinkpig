@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # RAG Open Source
 Note：着重关注多模态RAG
 ## 信息汇总

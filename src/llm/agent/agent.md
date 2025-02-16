@@ -10,7 +10,7 @@ tag:
 ---
 
 # Agent
-## AI Agent四种设计方式
+<!-- more -->
 
 ## AI Agent4种设计模式
 https://blog.csdn.net/weixin_40774379/article/details/139133605
@@ -26,8 +26,8 @@ https://blog.csdn.net/weixin_40774379/article/details/139133605
 Claude 3.5 Sonnet升级版便是Claude进一步Agent化的结果，大模型的直接升级让其实现能够直接操作电脑。Claude 3.5 Sonnet升级版的最大特点是具备计算机使用功能，引入了名为"computer use"的突破性功能，允许AI像人类一样操作计算机，包括查看屏幕、移动光标、点击按钮和输入文本等操作。
 
 ## LangChain Agent生态
-![alt text](image.png)
-
+![alt text](images/langchain_agent_ecosystem.png)
+![alt text](images/langchain_data_ecosystem.png)
 ## CoT 与 ReAct
 CoT:Reasoning
 用llm自身的能力做思维链，仅依赖模型本身的知识，不会用工具
