@@ -254,7 +254,7 @@ Feign client具体调用方式    ：http方式   (阿里关注spring cloud各�
 
 
 
-![](images/java_interview_001.png)
+![](images/java_interview_experience_001.png)
 
 幂等
 
@@ -270,7 +270,7 @@ Feign client具体调用方式    ：http方式   (阿里关注spring cloud各�
 
 
 
-![](images/java_interview_002.png)
+![](images/java_interview_experience_002.png)
 
 CAP理论
 
@@ -365,7 +365,7 @@ MySQL调优
 
 
 
-![](images/java_interview_003.png)
+![](images/java_interview_experience_003.png)
 
 #### 源码
 ##### 1 并发包，很值得看看
@@ -525,7 +525,7 @@ return (E) elementData[index]
 
 通过一个Node内部类实现的这种链表结构
 
-![](images/java_interview_004.png)
+![](images/java_interview_experience_004.png)
 
 实现了List和Deque接口，能够当作链表、队列、栈、双端队列来使用
 
@@ -1067,31 +1067,31 @@ Swagger UI
 系统架构
 
 ###### 架构选型图
-![](images/java_interview_005.png)
+![](images/java_interview_experience_005.png)
 
 微服务架构
 
-![](images/java_interview_006.png)
+![](images/java_interview_experience_006.png)
 
 
 
-![](images/java_interview_007.png)
+![](images/java_interview_experience_007.png)
 
 
 
-![](images/java_interview_008.png)
+![](images/java_interview_experience_008.png)
 
 
 
-![](images/java_interview_009.png)
+![](images/java_interview_experience_009.png)
 
 
 
-![](images/java_interview_010.png)
+![](images/java_interview_experience_010.png)
 
 
 
-![](images/java_interview_011.png)
+![](images/java_interview_experience_011.png)
 
 业务架构
 
@@ -1116,7 +1116,7 @@ Swagger UI
 
 
 
-![](images/java_interview_012.png)
+![](images/java_interview_experience_012.png)
 
 小组内会定期组织一些技术分享或code review吗（技术氛围）
 
