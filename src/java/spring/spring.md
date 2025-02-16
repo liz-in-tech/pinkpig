@@ -168,9 +168,9 @@ annotation自动注册bean
 ############ 自动装配Bean
 ############# 什么是自动装配？
 Spring IOC 容器知道所有 Bean 的配置信息，此外，通过 Java 反射机制还可以获知实现类的结构信息，如构造方法的结构、属性等信息。掌握所有 Bean 的这些信息后，Spring IOC 容器就可以按照某种规则对容器中的 Bean 进行自动装配，而无须通过显式的方式进行依赖配置。
-
+```
 Spring 提供的这种方式，可以按照某些规则进行 Bean 的自动装配，<bean>元素提供了一个指定自动装配类型的属性：autowire="<自动装配类型>"
-
+```
 ############# 类型
 ############## no
 默认方式，手动装配方式，需要通过ref设定bean的依赖方式
@@ -586,7 +586,7 @@ invoke
 
 Proxy#newProxyInstance源码
 
-
+```
 public static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,InvocationHandler h){
     // 拿到 $Proxy0 的 Class  （cl = class com.sun.proxy.$Proxy0）
     Class<?> cl = getProxyClass0(loader, intfs);
@@ -595,7 +595,7 @@ public static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,I
     // 根据构造方法传入参数进行实例化
     return cons.newInstance(new Object[]{h});
 }
-
+```
 通过反射创建代理对象
 
 ######### chlib动态代理
@@ -918,6 +918,7 @@ AutoConfigurationImportSelector实现了ImportSelector接口，这个接口的�
 1、获取注解的属性，用于后面的排除
 2、获取所有需要自动装配的配置类的路径：这一步是最关键的，从 META-INF/spring.factories 获取自动配置类的路径
 3、去掉重复的配置类和需要排除的重复类，把需要自动加载的配置类的路径存储起来
+```
     protected AutoConfigurationImportSelector.AutoConfigurationEntry getAutoConfigurationEntry(AnnotationMetadata annotationMetadata) {
         if (!this.isEnabled(annotationMetadata)) {
             return EMPTY_ENTRY;
@@ -937,7 +938,7 @@ AutoConfigurationImportSelector实现了ImportSelector接口，这个接口的�
             return new AutoConfigurationImportSelector.AutoConfigurationEntry(configurations, exclusions);
         }
     }
-
+```
 
 ####### @ComponentScan
 组件扫描和自动装配
