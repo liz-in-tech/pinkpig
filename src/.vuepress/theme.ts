@@ -33,6 +33,7 @@ export default hopeTheme({
   sidebar,
   plugins: {
     blog: true,
+    search: true,
     copyCode: {},
     components: {
       components: ["Badge", "VPCard", "PDF"],
