@@ -1,6 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
+  { text: "Interview", link: "/interview/" },
   { text: "Channel", link: "/channel/" },
   { text: "Language", link: "/language/" },
   { text: "LLM", link: "/llm/" },

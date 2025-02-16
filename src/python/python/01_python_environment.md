@@ -6,11 +6,12 @@ category:
 tag:
   - Python
 ---
-# 搭建Python开发环境，使用pip进行包管理
+# Python开发环境
   - 1. 适用范围
   - 2. Python开发环境
   - 3. 包管理工具pip
   - 4. pip 命令
+  - 5. Poetry
 <!-- more -->
 
 ## 1. 适用范围
@@ -378,3 +379,6 @@ cat requirements.txt
 理想情况下，新版本的包会向后兼容并且没有新引入的 bug。不幸的是，新版本引入的更改还是可能会破坏你的应用程序。可以通过 < 来避免安装不兼容的高版本。
 
 ![使用逻辑运算符指定依赖的版本](images/limit_version.png)
+
+## 5. Poetry--python包管理工具
+https://blog.csdn.net/Python966/article/details/134134702

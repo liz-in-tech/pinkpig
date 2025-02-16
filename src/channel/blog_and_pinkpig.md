@@ -9,6 +9,11 @@ tag:
 ---
 # 博客和知识库
 <!-- more -->
+## 新电脑的操作
+1. git clone 博客或知识库
+2. 安装npm并验证
+3. 执行命令：npm install,生成node_modules
+4. 启动命令：npm run docs:dev
 ## 启动
 ```
 npm run docs:dev
@@ -24,6 +29,28 @@ npm run docs:dev
 |时间线|写好后最好不要修改|每次修改更新为修改时间|
 |内容|要精不要多|随手笔记|
 
+## 博客注意事项
+### 写全英文，只写一套
+内置翻译器
+
+图片全英文
+
+让AI将英文转为中文
+
+对于现有的中文，让AI转为英文
+
+有搜索
+### 博客和github关联其他平台
+- github
+- 博客
+- discord
+{ icon: 'discord', link: 'https://discord.gg/ZPV9tQyRuh' },
+- 领英
+- 推特
+- Youtube
+- medium
+- 邮箱
+- 简历
 ## 两者都要注意
 - 图片最好是英文
 - 所有内容都记为markdown，不要杂七杂八

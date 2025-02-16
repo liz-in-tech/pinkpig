@@ -1,4 +1,97 @@
+---
+icon: lightbulb
+---
+# 大模型资源
+## 动手实现LLM中文版
+https://github.com/liz-starfield/llms-from-scratch-cn
 
+## llm-course
+https://github.com/mlabonne/llm-course
+
+## LLMSurvey
+https://github.com/RUCAIBox/LLMSurvey
+
+## llm-cookbook
+https://github.com/datawhalechina/llm-cookbook
+
+## awesome-langchain
+https://github.com/kyrolabs/awesome-langchain
+
+## llm-interview
+https://github.com/315386775/DeepLearing-Interview-Awesome-2024
+
+https://github.com/km1994/LLMs_interview_notes
+
+https://github.com/wdndev/llm_interview_note
+
+## 七月在线
+https://blog.csdn.net/v_JULY_v
+
+https://www.julyedu.com/
+
+## Tom Yeh
+https://substack.com/@tomyeh
+
+## 动手学深度学习
+https://zh.d2l.ai/
+
+## paper-implements
+https://github.com/labmlai/annotated_deep_learning_paper_implementations
+
+## ChatGPT可视化
+https://bbycroft.net/llm
+
+## 苏建林
+https://spaces.ac.cn/
+
+## reddit/discord/github trending/hugging face
+
+## leaderboard(排行榜)
+### lmsys(国外AB Test)
+https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard
+
+https://chat.lmsys.org/?leaderboard
+
+### liveBench(一直更新测试数据库来减少污染)
+https://livebench.ai/
+
+### fine-tuning-index(微调能上升的幅度)
+https://predibase.com/fine-tuning-index
+
+### superclue(国内排行榜)
+https://www.superclueai.com/
+
+### More
+https://www.reddit.com/r/LocalLLaMA/comments/1cznheh/llm_leaderboards/
+
+https://oobabooga.github.io/benchmark.html(不太可信)
+
+https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard
+
+https://eqbench.com/
+
+https://evalplus.github.io/leaderboard.html
+
+## 思考
+能增强LLM的方式：Continue PreTrain, Fine-Tune, RAG。什么时候用什么
+
+做一个从各个leaderboard抓取新数据的汇总排行榜
+
+
+## AI领域信噪比（哥哥说的）
+- 通用news
+  - 机器之心每周周报
+  - Github每三天一次trending projects整理
+  - LocalLLaMA每三天一次热点POST
+- 每日追踪信息
+  - arxiv关键词每日paper
+  - 重点论文被引用通知
+- 学术
+  - LLM Book与LLM面经
+  - transformer重要模型原理，组件与实现
+  - track 深入算法复现与改动
+
+## 学习资源
 - 学习资源（哥哥给的资料）
   - 53AI(会收集其他区地方的优秀文章) https://53ai.com/news/RAG/2024081119702.html
   - 2024大语言模型入门指南：从小白到高手(基础篇) 硬件资源篇 https://www.bilibili.com/read/cv34509617/
@@ -15,12 +108,26 @@
       - RAG_Techniques(foreign, fork:856, star:8.5k)https://github.com/NirDiamant/RAG_Techniques
       - DataWhale(fork:1.5k,star:11.9k)https://github.com/datawhalechina/llm-cookbook
       - DataWhale(fork:583,star:4.7k)https://github.com/datawhalechina/llm-universe
+      - bilibili上的丁师兄大模型
   - 非LLM
     - 关于Python的面试题 https://github.com/taizilongxu/interview_python
     - The Document is All You Need 一站式LLM底层技术原理 https://s3tlxskbq3.feishu.cn/docx/NyPqdCKraoXz9gxNVCfcIFdnnAc
+
     
 
+## RAG很重要（按这个写博客）
+每天看2篇论文：
+https://huggingface.co/papers
 
+https://github.com/togethercomputer/together-cookbook
+
+### intro-llm-rag(教学)
+https://github.com/zahaby/intro-llm-rag
+
+### RAG_Techniques(教学)
+https://github.com/NirDiamant/RAG_Techniques
+
+## 项目
 - 项目
   - https://github.com/karthik-codex/Autogen_GraphRAG_Ollama
   - unwindai
@@ -52,3 +159,33 @@
 基于RAG的本地知识库
 
 https://github.com/1Panel-dev/MaxKB  （基于RAG的本地知识库）
+
+
+## Desktop AI Assistant
+https://github.com/szczyglis-dev/py-gpt
+
+## Drag LLM flow
+https://github.com/FlowiseAI/Flowise
+
+## Enhanced ChatGPT Clone
+https://github.com/danny-avila/LibreChat
+
+## Dify
+Dify is an open-source LLM app development platform
+
+## AI Products
+https://github.com/TheExplainthis/AI-Products-All-In-One
+
+## awsome-courses
+https://github.com/forthespada/Awsome-Courses
+
+## vector database
+### milvus
+#### RRF
+倒数排名融合
+
+alibaba
+
+### faiss
+
+## 极客时间

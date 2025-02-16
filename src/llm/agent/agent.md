@@ -28,6 +28,23 @@ Claude 3.5 Sonnet升级版便是Claude进一步Agent化的结果，大模型的�
 ## LangChain Agent生态
 ![alt text](images/langchain_agent_ecosystem.png)
 ![alt text](images/langchain_data_ecosystem.png)
+
+### history
+#### v0.0.x
+不同组件
+
+#### v0.2
+LCEL，降低了抽象，所有组件打平在一层，都可以用管道符去连接组合
+
+### langfuse
+langsmith alternative
+
+### 最核心
+#### Runnable
+强类型panditic
+
+管道符进行任意排列组合
+
 ## CoT 与 ReAct
 CoT:Reasoning
 用llm自身的能力做思维链，仅依赖模型本身的知识，不会用工具

@@ -1,6 +1,12 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
+  "/interview/":[{
+    text: "Interview",
+    icon: "book",
+    collapsible: true,      
+    children: "structure"
+  }],
   "/channel/":[{
     text: "Channel",
     icon: "book",

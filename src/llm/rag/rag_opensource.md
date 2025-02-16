@@ -3,21 +3,8 @@ icon: lightbulb
 ---
 # RAG Open Source
 Note：着重关注多模态RAG
-## 信息汇总
 
-## 很重要（按这个写博客）
-每天看2篇论文：
-https://huggingface.co/papers
-
-https://github.com/togethercomputer/together-cookbook
-
-### intro-llm-rag(教学)
-https://github.com/zahaby/intro-llm-rag
-
-### RAG_Techniques(教学)
-https://github.com/NirDiamant/RAG_Techniques
-
-## 开源项目
+## RAG相关开源项目
 |name|fork|star|pr|issue|c1m|open|contributors|ps|
 |--|--|--|--|--|--|--|--|--|
 |AutoRAG|209|2.7k|3|96|51|1|15|python|
