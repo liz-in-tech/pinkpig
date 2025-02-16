@@ -648,12 +648,13 @@ Step3：释放资源，启动NamesrvController
 ##### 步骤
 ###### 路由元信息(主要是4个KV表)
 ####### 代码：RouteInfoManager
+```
 private final HashMap<String/* topic */, List<QueueData>> topicQueueTable;
 private final HashMap<String/* brokerName */, BrokerData> brokerAddrTable;
 private final HashMap<String/* clusterName */, Set<String/* brokerName */>> clusterAddrTable;
 private final HashMap<String/* brokerAddr */, BrokerLiveInfo> brokerLiveTable;
 private final HashMap<String/* brokerAddr */, List<String>/* Filter Server */> filterServerTable;
-
+```
 
 
 ![](images/rocketmq_043.png)
