@@ -4,8 +4,10 @@ icon: lightbulb
 # Java Interview
 ## 八股
 ### JVM
-#### JVM内存模型
-##### Double与double在JVM里的存储细节
+JVM内存模型
+
+Double与double在JVM里的存储细节
+
 基本数据类型在栈
 
 包装类在堆
@@ -26,7 +28,8 @@ JVM调优
 
 公平锁和非公平锁
 
-##### synchronized
+synchronized
+
 synchorined与RentrateLock的区别
 
 synchorined在JDK1.6之后做了哪些改动
@@ -65,7 +68,8 @@ RentrateLock底层AQS是怎么实现的吗
 CountDownLatch
 
 ### MySQL
-#### 索引
+索引
+
 什么字段适合加索引
 
 索引优化的explain命令有哪些参数
@@ -85,13 +89,16 @@ where 条件a or 条件b ，a和b都有索引, 怎么查的，用了哪个索引
 
 索引失效的情况
 
-#### 存储引擎
+存储引擎
+
 innoDB底层是怎么实现的，为什么不用b树
 
 MySQL存储数据的结构是怎样的？按页存储，16k，多页又会出现什么情况
 
-#### 事务
-##### 事务的隔离级别，分别会出现什么问题
+事务
+
+事务的隔离级别，分别会出现什么问题
+
 Mysql怎么解决脏读 答：MVCC
 
 MySQL和Oracle的事务隔离级别（这个之前面试有答反哦）
@@ -100,11 +107,13 @@ MySQL和Oracle的事务隔离级别（这个之前面试有答反哦）
 
 MVCC是怎么实现的
 
-#### SQL
+SQL
+
 SQL：employee表有id,name字段，name有重复，删掉重复名字的，每个名字只保留一条
 oracle的分页：取oracle表的2-9行，rownum &lt; &gt;能直接大于2小于9吗，还是子查询里小于9，然后外面嵌套查询大于2，大于和小于有先后顺序吗，哪个先，哪个后
 
-#### 数据量大
+数据量大
+
 MySQL数据有几亿，会出现什么问题
 为什么读写慢
 
@@ -125,11 +134,13 @@ Redis的集群模式有哪些（哨兵？主从？是两种）
 
 为什么要做缓存? 我的回答：内存操作，减少IO
 
-#### Redis用过哪些数据结构，知道hash底层是怎么实现的吗
+Redis用过哪些数据结构，知道hash底层是怎么实现的吗
 Redis 存储数据结构
+
 list数据结构是双向链表还是单向链表，我在项目中用什么数据结构，为什么要用hash存对象
 
-#### Redislock 分布式锁的实现原理
+Redislock 分布式锁的实现原理
+
 redis分布式锁：在修改支付状态前卡住了，没修改成功，并且锁失效了，其他请求会进来，那么也会到修改支付状态这步，会重复吗   
 答：修改支付状态（如果支付状态是未支付，才去修改，update where status is nopay，查询状态和修改状态是原子性的）肯定是不会同时，所以总是只有一个能成功，其他的无法修改成功
 
@@ -147,7 +158,8 @@ redis和mysql的事务的区别
 锁有设置过期时间，代码执行到一半，锁过期了怎么处理？ttl给锁续期
 
 ### MQ
-#### MQ选型
+MQ选型
+
 为什么选用RocketMQ
 
 RabbitMQ为什么慢
@@ -171,7 +183,8 @@ RocketMQ的底层实现
 
 ### Spring
 #### Spring
-##### AOP
+AOP
+
 加挡板过程，原理
 
 AOP的使用
@@ -179,10 +192,12 @@ AOP的原理-->动态代理 2种区别
 
 AOP是在初始化的哪一步
 
-##### IOC
+IOC
+
 IoC DI ，spring对象创建托管，生命周期原理(spring 底层原理，怎么用代理的方式创建对象，销毁对象
 
-###### 反射（电费优化策略模式中的反射）不会与SpringBean管理冲突吗
+反射（电费优化策略模式中的反射）不会与SpringBean管理冲突吗
+
 https://zhuanlan.zhihu.com/p/264783307
 
 SpringBean的生命周期，它有几个生命周期
@@ -211,14 +226,16 @@ Hystrix两种模式的区别，限流降级实现
 Eureka挂了还能正常调用吗？
 Eureka会缓存实例信息到客户端，那Eureka挂了，可以用本地缓存的信息调用吗？
 
-##### 服务通信
+服务通信
+
 ###### RPC
 http性能为什么没有rpc好？网络有7层协议，rpc是更底层的
 RPC是属于哪种协议呢？
 
 有了解过RPC框架吗？RPC和SpringCloud有什么区别呢？
 
-####### dubbo
+dubbo
+
 服务间调用组件用的啥，有没有用过dubbo
 
 spring cloud vs dubbo
@@ -231,32 +248,36 @@ Restful了解吗
 Feign client具体调用方式    ：http方式   (阿里关注spring cloud各组件原理)  
 
 ### 分布式
-#### 分布式事务
+分布式事务
+
 分布式事务的实现
 
 
 
-![](images/Java_Interview_001.png)
+![](images/java_interview_001.png)
 
-#### 幂等
+幂等
+
 消息幂等的解决方案 1.分布式事务 2.数据库cas操作 3.还有其他方法吗
 
 幂等性问题的场景？ACK机制重试      如何解决？分布式锁
 
-#### 分布式锁
+分布式锁
+
 不用分布式锁，Mysql本身是不是也可做到这个事情？ 用数据库的cas操作
 
 分布式锁的实现 1.redis 2.zookeeper
 
 
 
-![](images/Java_Interview_002.png)
+![](images/java_interview_002.png)
 
 CAP理论
 
 raft协议
 
-#### 定时任务
+定时任务
+
 定时任务的实现方式
 
 补偿的一些逻辑，是写在定时任务的项目里，还是其他项目里？
@@ -268,7 +289,8 @@ raft协议
 
 ### Java基础
 #### 集合
-##### HashMap的底层原理
+HashMap的底层原理
+
 HashMap原理？底层数组+链表+红黑树，重写hashcode和equals，hashcode找到数组下标，equals对链表进行比对，如果存在则覆盖。
 为什么要转成红黑树？性能
 链表和红黑树的时间复杂度是多少？链表O(n),红黑树O(logn)
@@ -283,7 +305,8 @@ hashset去重原理
 解决哈希冲突的方式有哪些
 
 #### 基础
-##### Double为什么会丢失精度
+Double为什么会丢失精度
+
 科学计数法存储
 
 float 符号位(1bit) 指数(8 bit) 尾数(23 bit)
@@ -313,10 +336,12 @@ TCP UDP的区别
 ### 其他
 cpu问题怎么排查
 
-#### 线上接口访问着一下子慢了，怎么排查
+线上接口访问着一下子慢了，怎么排查
+
 如何确定慢在哪一步
 
-#### 安全
+安全
+
 安全方面做了哪些措施？token校验，金额校验   针对反编译接口，有没有保护的机制，比如接口的鉴权校验
 
 支付风控
@@ -340,13 +365,15 @@ MySQL调优
 
 
 
-![](images/Java_Interview_003.png)
+![](images/java_interview_003.png)
 
 #### 源码
 ##### 1 并发包，很值得看看
 ###### ConcurrentHashMap
-####### 核心方法（和HashMap完全一致）
-######## put(k,v)
+核心方法（和HashMap完全一致）
+
+put(k,v)
+
 做插入操作时，首先进入乐观锁，
 然后，在乐观锁中判断容器是否初始化，
 如果没初始化则初始化容器，
@@ -357,43 +384,57 @@ MySQL调优
 
 总结：在链表或红黑树上查找之前，都是CAS锁；在链表或红黑树上查找时，才加synchronized锁
 
-######## get(k)
+get(k)
+
 不加锁，由volatile保证的值是最新的
 
 remove(k)
 
-####### 数据结构
-######## volatile Node<K,V>[] table;
+数据结构
+```
+volatile Node<K,V>[] table;
+```
 用volatile修饰
 
 ###### CopyOnWriteArrayList
 读写分离的思想，适用于读多写少且不要求强一致性的场景
 
-####### 优
+优
+
 并发读而不需加锁
 
-####### 缺
-######## 内存占用问题
+缺
+
+内存占用问题
+
 写时复制，会有两份对象内存
 
-######## 数据不一致问题
+数据不一致问题
+
 只能保证最终一致性，不能保证强一致性
 
-####### 数据结构
-######## volatile Object[] array;
+数据结构
+
+volatile Object[] array;
+
 用volatile修饰
 
-####### 构造函数
-######## CopyOnWriteArrayList()
+构造函数
+
+CopyOnWriteArrayList()
+
 array = new Object[0]
 
-####### 核心方法（和ArrayList完全一致）
-######## 和ArrayList的区别
+核心方法（和ArrayList完全一致）
+
+和ArrayList的区别
+
 1.有多少元素，容量就是多大，没有空闲的容量
 
 2.写操作加了synchronized锁
 
-######## 写操作加synchronized锁，复制新的容器进行增删改，完成后引用指向新容器
+写操作加synchronized锁，复制新的容器进行增删改，完成后引用指向新容器
+
 add(Object)
 add(index,Object)
 
@@ -402,7 +443,8 @@ remove(Object)
 
 set(index,Object)
 
-######## 读操作不加锁
+读操作不加锁
+
 get(index)
 
 ##### 2 面试常问的集合之类的
@@ -412,28 +454,38 @@ get(index)
 
 遍历方式：实现了RandomAccess，可以随机访问，遍历推荐用普通for循环
 
-####### 数据结构
+数据结构
+
 int size;
 
 Object[] elementData;
 
-######## 参数
+参数
+
 int DEFAULT_CAPACITY = 10;
 
-####### 构造函数
-######## ArrayList()
+构造函数
+
+ArrayList()
+
 在构造函数时还是空数组，初始大小是在第一次add()时扩容到默认容量10
 
-######## ArrayList(capacity)
+ArrayList(capacity)
+
 初始大小为设置的容量capacity
 
-####### 核心方法
-######## add(Object)
+核心方法
+
+add(Object)
 add(index,Object)
-######### add(E)是在尾部添加，先看受否需要扩容完成扩容，在尾部进行添加
+
+add(E)是在尾部添加，先看受否需要扩容完成扩容，在尾部进行添加
 add(index,E)是在任意下标位置添加，先看是否需要扩容完成扩容，然后将后面元素往后移一位，在下标位置进行添加
-########## ArrayList的核心是基于数组的动态扩容机制
-########### 扩容的关键方法grow(capacity)
+
+ArrayList的核心是基于数组的动态扩容机制
+
+扩容的关键方法grow(capacity)
+```
 private void grow(int minCapacity) {
         // overflow-conscious code
         int oldCapacity = elementData.length;  //将扩充前的elementData大小给oldCapacity
@@ -446,38 +498,45 @@ private void grow(int minCapacity) {
     //新的容量大小已经确定好了，就copy数组，改变容量大小咯。（这步是真正的扩容操作，以上的都在计算要扩容多少）
         elementData = Arrays.copyOf(elementData, newCapacity);
     }
+```
+总结
 
-########### 总结
 除了初始为空数组和超过最大值的情况，正常情况下会扩容1.5倍
 int newCapacity = oldCapacity + (oldCapacity >> 1);
 
-######## remove(index)
+remove(index)
 remove(Object)
+
 remove(index)根据索引删除，将后面的都往前移一位
 remove(Object)根据内容删除，先遍历找到下标，然后将后面的都往前移一位
 
-######## set(index,Object)
+set(index,Object)
+
 检查索引是否越界，用新值替换数组对应下标的旧值
 elementData[index] = element
 
-######## get(index)
+get(index)
+
 检查索引是否越界，返回数组对应下标的值
 return (E) elementData[index]
 
 ###### LinkedList
-####### 双向链表，增删快，查询慢
+双向链表，增删快，查询慢
+
 通过一个Node内部类实现的这种链表结构
 
-![](images/Java_Interview_004.png)
+![](images/java_interview_004.png)
 
 实现了List和Deque接口，能够当作链表、队列、栈、双端队列来使用
 
 遍历方式：iterator或foreach(即增强for循环，其原理就是iterator)
 
-####### 数据结构
+数据结构
+```
 int size = 0;
 
-######## Node<E> first;
+Node<E> first;
+
 private static class Node<E> {
         E item;
         Node<E> next;
@@ -485,41 +544,52 @@ private static class Node<E> {
 }
 
 Node<E> last;
+```
+构造函数
 
-####### 构造函数
 LinkedList()
 
-####### 核心方法
+核心方法
 
 总结：如果指定index，可以确定从前遍历查找还是从后遍历查找；如果没有涉及index，那都从前遍历查找
-######## add(Object)
+
+add(Object)
 add(index,Object)
+
 add(Object)添加到尾部
 add(index,Object)添加到任意位置，先通过index找到结点Node，和get(index)方式一样，然后在这个Node之前添加新结点
 
-######## remove(Object)
+remove(Object)
 remove(index)
+
 remove(Object)从头结点顺序查找，找到后进行删除
 remove(index)和get(index)方式一样找到Node，然后进行删除
 
-######## get(index)
+get(index)
+
 1.看index是在链表的前一半还是后一半（最多只查一半）
 2.如果在前一半，从头结点开始顺序查找
 2.如果在后一半，从尾结点开始顺序查找
 
-######## indexOf(Object)
+indexOf(Object)
+
 无法知道是在前一半还是后一半，所以从头结点顺序查找
 
 ###### HashMap
-####### 数据结构
-######## int size;
+数据结构
+
+int size;
+
 键值对个数
 
-######## int threshold;
-######### threshold=capacity * load factor，是扩容的阈值，当size >= threshold时，达到了扩容的条件之一
+int threshold;
+
+threshold=capacity * load factor，是扩容的阈值，当size >= threshold时，达到了扩容的条件之一
+
 扩容条件至二：put一个元素时，对应数组位置上有元素（如果没有元素，则本次put不进行扩容操作）
 
-######## float loadFactor;
+float loadFactor;
+
 计算HashMap的实时装载因子的方法为：size/capacity
 
 用来衡量HashMap满的程度，决定什么时候扩容
@@ -528,82 +598,105 @@ loadFactor越趋近于1，那么数组中存放的数据(entry)也就越多，�
 loadFactor越趋近于0，数据越稀疏，会浪费空间
 
 默认为0.75，一般情况下不需要更改它
+```
+Node<K,V>[] table;
 
-######## Node<K,V>[] table;
 static class Node<K,V> implements Map.Entry<K,V> {
         final int hash;
         final K key;
         V value;
         Node<K,V> next;
 }
+```
+数组的长度即capacity，默认值为16，一般第一次扩容到64，之后是2倍
 
-######### 数组的长度即capacity，默认值为16，一般第一次扩容到64，之后是2倍
 数组的长度总是2的幂
 
-######## 参数
-######### int DEFAULT_INITIAL_CAPACITY = 1 << 4;
+参数
+
+int DEFAULT_INITIAL_CAPACITY = 1 << 4;
+
 默认初始容量16
 
 int MAXIMUM_CAPACITY = 1 << 30;
 
-######### float DEFAULT_LOAD_FACTOR = 0.75f;
+float DEFAULT_LOAD_FACTOR = 0.75f;
+
 默认加载因子0.75，f是float的意思，因为直接写0.75默认是double类型
 
-######### int TREEIFY_THRESHOLD = 8;
+int TREEIFY_THRESHOLD = 8;
+
 链表转红黑树的阈值8
 
-######### int UNTREEIFY_THRESHOLD = 6;
+int UNTREEIFY_THRESHOLD = 6;
+
 红黑树转链表的阈值6
 
 int MIN_TREEIFY_CAPACITY = 64;
 
-####### 构造函数
+构造函数
 (操作仅仅是变量赋值，还没有初始化容器)
-######## HashMap()
+
+HashMap()
+
 默认的初始容量和加载因子
 
-######## HashMap(capacity)
+HashMap(capacity)
+
 指定的初始容量，默认的加载因子
 
-####### 核心方法
-######## put(k,v)
-######### 1.判断是否要扩容
+核心方法
+
+put(k,v)
+
+1.判断是否要扩容
 第一次put时，进行初始化容器，初始化操作即调用resize()扩容操作
-########## 扩容resize()
+
+扩容resize()
+
 会遍历所有的键值对进行重新hash分配，是非常耗时的
 
-######### 2.通过hash找到数组下标
+2.通过hash找到数组下标
+
 (n - 1) & hash，当容量n为2的幂时，等价于hash%n，即将hash取模，确保在有效下标范围内，避免下标越界
 
 3.通过equals比对数组下标位置处以及链表或红黑树的key
 
-######### 4.如果找到了，进行替换；没找到进行添加
+4.如果找到了，进行替换；没找到进行添加
+
 如果数组下标处为空，放数组下标处
 
 如果是链表，放链表末尾
 
 如果是红黑树，放树中
 
-######## get(k)
+get(k)
+
 1.通过hash找到数组下标
 
 2.通过equals比对数组下标位置处以及链表或红黑树的key
 
-######## remove(k)
+remove(k)
+
 找到后删除
 
 ###### LinkedHashMap
-####### 和HashMap的唯一区别：有序
+和HashMap的唯一区别：有序
+
 用双向链表维护了迭代顺序，该迭代顺序可以是插入顺序或者是访问顺序
 
 和HashMap操作数据的方法完全一样，无非就是细节上有一些的不同罢了
 
-####### 底层实现
-######## LinkedHashMap可以认为是HashMap+LinkedList
+底层实现
+
+LinkedHashMap可以认为是HashMap+LinkedList
+
 它既使用HashMap操作数据结构，又使用LinkedList维护插入元素的先后顺序
 
-####### 数据结构
-######## Entry<K,V> head;
+数据结构
+```
+Entry<K,V> head;
+
 static class Node<K,V> implements Map.Entry<K,V> {
         /*这是和HashMap一样的*/
         final int hash;
@@ -614,13 +707,16 @@ static class Node<K,V> implements Map.Entry<K,V> {
         Entry<K,V> before, after;
 }
 
-######## Entry<K,V> tail;
+Entry<K,V> tail;
+```
 默认链表新访问的放尾部，越老的访问越靠近头节点
 
-######## final boolean accessOrder;
+final boolean accessOrder;
+
 迭代顺序，true为访问顺序，即最近最少使用顺序LRU，false为插入顺序
 
-####### 构造函数
+构造函数
+
 public LinkedHashMap(int initialCapacity, float loadFactor,
  boolean accessOrder) {
     /*父类即HashMap的构造函数*/
@@ -629,44 +725,63 @@ public LinkedHashMap(int initialCapacity, float loadFactor,
     this.accessOrder = accessOrder;
 }
 
-####### 核心方法（和HashMap完全一致）
+核心方法（和HashMap完全一致）
 
 方法都是HashMap中的，这里重写了一些钩子函数
-######## put(k,v)
-######### 已存在进行更新
-########## afterNodeAccess(node);
-########### 维护访问或更新操作后的双向链表
+
+put(k,v)
+
+已存在进行更新
+
+afterNodeAccess(node);
+
+维护访问或更新操作后的双向链表
+
 把目标节点从当前位置删除，添加到链表尾部
 
-######### 不存在进行插入
-########## 维护插入操作后的双向链表
-########### linkNodeAtEnd(p);
+不存在进行插入
+
+维护插入操作后的双向链表
+
+linkNodeAtEnd(p);
+
 将目标节点添加到链表尾部
 
-########### afterNodeInsertion(boolean)
+afterNodeInsertion(boolean)
+
 默认不生效的
 
 如果重写boolean removeEldestEntry(eldest)，例如当容量满时删掉最老的那一个，那么当该方法为true时，会删掉链表的头结点，实现LRU
 
-######## get(k)
-######### afterNodeAccess(node);
-########## 维护访问或更新操作后的双向链表
+get(k)
+
+afterNodeAccess(node);
+
+维护访问或更新操作后的双向链表
+
 把目标节点从当前位置删除，添加到链表尾部
 
-######## remove(k)
-######### afterNodeRemoval(node);
-########## 维护删除操作后的双向链表
+remove(k)
+
+afterNodeRemoval(node);
+
+维护删除操作后的双向链表
+
 把目标节点从当前位置删除
 
 ###### TreeMap
 有序，按key排序，可以通过比较器指定排序方式
 
-####### 底层实现
-######## 红黑树
+底层实现
+
+红黑树
+
 红黑树结构天然支持排序，默认情况下通过Key值的自然顺序进行排序
 
-####### 数据结构
-######## Entry<K,V> root;
+数据结构
+```
+Entry<K,V> root;
+
 static final class Entry<K,V> implements Map.Entry<K,V> {
         K key;
         V value;
@@ -679,21 +794,29 @@ static final class Entry<K,V> implements Map.Entry<K,V> {
 int size = 0;
 
 final Comparator<? super K> comparator;
+```
+构造函数
 
-####### 构造函数
-######## TreeMap()
+TreeMap()
+
 默认顺序
-
-######## TreeMap(Comparator<? super K> comparator)
+```
+TreeMap(Comparator<? super K> comparator)
+```
 指定排序顺序
 
-####### 核心方法（和HashMap完全一致）
-######## 查
-######### get(k)
+核心方法（和HashMap完全一致）
+
+查
+
+get(k)
+
 从根节点开始对比，决定往左子树还是右子树走
 
-######## 增改
-######### put(k,v)
+增改
+
+put(k,v)
+
 1.第一次put会创建红黑树并赋值给root
 
 2.寻找key，和get(k)一致
@@ -702,12 +825,15 @@ final Comparator<? super K> comparator;
 
 4.没找到，插入到最后遍历的节点下；调整实现平衡
 
-######## 删
-######### remove(k)
+删
+
+remove(k)
+
 1.先找到待删除节点
 
-########## 2.删除该节点
+2.删除该节点
 （如何删除树节点，算法题有考察到）
+
 1）删除的是根节点，则直接将根节点置为null;
 2）待删除节点的左右子节点都为null，删除时将该节点置为null;
 3）待删除节点的左右子节点有一个有值，则用有值的节点替换该节点即可；
@@ -796,7 +922,8 @@ Result - 最终得到了什么样的效果。
 这是整个语言组织的框架，不要冗长啰嗦。要有细节。没有细节的故事听起来就很假，所以，其中要有很多细节。因为是技术方面的，所以，一定要有很多技术细节。要有感情。讲这些故事一定要带感情。要让面试官感受到你的热情、骄傲、坚韧和顽强。一定要是真实的，只有真实的事才会有真实的感情。要有思考。只有细节和故事还不够，还要有自己的思考和得失总结，以及后续的改进。这不是你能临时准备出来的，工夫都是花在平时的。而训练这方面能力的最好方式就是在工作中写文档 ，在工作之余写博客。只有写得多了，写得好了，你这样的能力才能训练出来。
 
 ### 国网项目
-#### 项目有多大的并发量
+项目有多大的并发量
+
 并发量：日活
 
 看不同的接口，高频的接口，平均在2000多qps，支付每秒几十笔的样子（参考得物的回答）
@@ -823,20 +950,25 @@ redis的key设置
 
 对账，按天对的，凌晨2点，保证数据完整性
 
-#### 技术栈与使用场景
+技术栈与使用场景
+
 ##### 基础设施
 ###### 数据库
 MySQL
 
-####### 数据库连接池
+数据库连接池
+
 Druid
 
-####### 数据库分库分表
+数据库分库分表
+
 ShardingJDBC
 
 ###### 缓存
-####### Redis
-######## redis客户端框架
+Redis
+
+redis客户端框架
+
 redisson
 
 ###### 消息中间件
@@ -847,19 +979,23 @@ RocketMQ
 SpringBoot
 
 ###### MVC框架
-####### 接口规范
+接口规范
+
 RESTful
 
 SpringMVC
 
 ###### 持久框架
-####### ORM框架
+ORM框架
+
 Mybatis
 
-####### Mybatis增强工具
+Mybatis增强工具
+
 Mybatis-Plus
 
-####### 数据库代码生辰工具
+数据库代码生辰工具
+
 MybatisGenerator
 
 ###### 负载均衡
@@ -869,21 +1005,27 @@ nginx
 xxl-job
 
 ###### SpringCloud
-####### 注册中心
+注册中心
+
 Eureka
 
 ###### SpringCloudAlibaba
-####### 注册中心/配置中心
+注册中心/配置中心
+
 Nacos
 
-####### 分布式事务框架
-######## Seata
+分布式事务框架
+
+Seata
+
 19年1月开源
 
-####### 限流框架
+限流框架
+
 Sentinel
 
-####### RPC框架
+RPC框架
+
 Dubbo
 
 ##### CI/CD
@@ -910,7 +1052,8 @@ guava
 Lombok
 
 ###### 安全框架/认证和授权框架
-####### Spring Security
+Spring Security
+
 Spring Security Oauth2
 
 ###### 认证/JWT登陆支持
@@ -919,37 +1062,46 @@ JWT
 ###### 文档生成工具
 Swagger UI
 
-#### 架构图
-##### 系统架构
+架构图
+
+系统架构
+
 ###### 架构选型图
-![](images/Java_Interview_005.png)
+![](images/java_interview_005.png)
 
-####### 微服务架构
-![](images/Java_Interview_006.png)
+微服务架构
 
-######## 
-![](images/Java_Interview_007.png)
-
-######### 
-![](images/Java_Interview_008.png)
-
-########## 
-![](images/Java_Interview_009.png)
-
-########### 
-![](images/Java_Interview_010.png)
+![](images/java_interview_006.png)
 
 
 
-![](images/Java_Interview_011.png)
+![](images/java_interview_007.png)
+
+
+
+![](images/java_interview_008.png)
+
+
+
+![](images/java_interview_009.png)
+
+
+
+![](images/java_interview_010.png)
+
+
+
+![](images/java_interview_011.png)
 
 业务架构
 
 项目组织结构
 
 ## 其他
-### 自我介绍
-#### 不要扯太多不相关的过往，主要说项目和自己的优势
+自我介绍
+
+不要扯太多不相关的过往，主要说项目和自己的优势
+
 我在技术方面做了什么，看了哪些框架和源码
 
 我有自己做出了什么项目，产品
@@ -960,10 +1112,11 @@ Swagger UI
 
 平时会看一些框架或JDK源码吗？问有读过哪些源码？平时什么途径学习的，怎么学习的？
 
-### 你有什么要问我的吗
+你有什么要问我的吗
 
 
-![](images/Java_Interview_012.png)
+
+![](images/java_interview_012.png)
 
 小组内会定期组织一些技术分享或code review吗（技术氛围）
 
@@ -977,11 +1130,13 @@ Swagger UI
 
 您觉得公司的文化怎么样，您最喜欢公司的哪一点
 
-### 简历
+简历
+
 简历不追求多，而追求精，突出亮点，每一点准备好问到你不会，一定要特别熟悉
 
 把它看成广告位
 
-### 打招呼语
+打招呼语
+
 您好，我有4年+的Java开发经验，对JVM、JUC、Spring、MySQL、Redis、MQ，以及微服务和分布式都有经验和积累。我非常希望能够得到这个岗位的面试机会，如果岗位还有空缺，希望能够得到机会。
 
