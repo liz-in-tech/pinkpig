@@ -2,6 +2,22 @@
 icon: lightbulb
 ---
 # 大模型资源
+
+
+https://github.com/DSXiangLi/DecryptPrompt/
+
+
+
+提示工程指南
+
+https://www.promptingguide.ai/zh
+
+https://prompt-guide.xiniushu.com/
+
+
+
+[一站式NLP与LLM](https://s3tlxskbq3.feishu.cn/docx/NyPqdCKraoXz9gxNVCfcIFdnnAc)
+
 ## 动手实现LLM中文版
 https://github.com/liz-starfield/llms-from-scratch-cn
 
@@ -41,10 +57,6 @@ https://github.com/labmlai/annotated_deep_learning_paper_implementations
 ## ChatGPT可视化
 https://bbycroft.net/llm
 
-## 苏建林
-https://spaces.ac.cn/
-
-## reddit/discord/github trending/hugging face
 
 ## leaderboard(排行榜)
 ### lmsys(国外AB Test)
@@ -160,6 +172,11 @@ https://github.com/NirDiamant/RAG_Techniques
 
 https://github.com/1Panel-dev/MaxKB  （基于RAG的本地知识库）
 
+[Github Trending 微信推送机器人](https://blog.csdn.net/m0_73382195/article/details/136061949?ops_request_misc=%257B%2522request%255Fid%2522%253A%25221120f7cb7afe9b292aa00ab1cd0fae6d%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=1120f7cb7afe9b292aa00ab1cd0fae6d&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-136061949-null-null.142^v101^pc_search_result_base9&utm_term=github%20trending&spm=1018.2226.3001.4187)
+
+GitHubTrendingRSS
+Unofficial RSS feed generator for GitHub Trending
+项目地址: https://gitcode.com/gh_mirrors/gi/GitHubTrendingRSS
 
 ## Desktop AI Assistant
 https://github.com/szczyglis-dev/py-gpt
@@ -189,3 +206,11 @@ alibaba
 ### faiss
 
 ## 极客时间
+
+
+https://github.com/Mooler0410/LLMsPracticalGuide
+
+
+https://github.com/HqWu-HITCS/Awesome-Chinese-LLM
+
+https://blog.csdn.net/weixin_65514978/article/details/143043450
