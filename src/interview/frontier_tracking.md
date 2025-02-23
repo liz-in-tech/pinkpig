@@ -54,8 +54,16 @@ icon: lightbulb
 
 ## 中文频道
 bilibili
+- 五里墩茶社
+- AI开发者-就爱瞎鼓捣
+- 卢菁老师_北大AI博士后
+- 回到Axton
+- 大模型入门教程
 
 csdn
+1. [七月在线博客](https://blog.csdn.net/v_JULY_v)
+
+2. [53AI: 会收集其他区地方的优秀文章](https://www.53ai.com/news/qianyanjishu)
 
 微信公众号
 

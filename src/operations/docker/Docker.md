@@ -140,7 +140,14 @@ Docker Hub([https://hub.docker.com](https://hub.docker.com/)) 提供了庞大的
 # docker基础命令
 ## 安装
 docker必须在linux内核上跑 <br/>
+
 windows上要装docker，需先装wsl（相当于vmware），然后装ubuntu（linux环境），之后才能跑docker <br/>
+
+macOS安装docker: brew install --cask docker  
+
+brew install --cask docker 和 brew install docker的区别
+- brew install --cask docker 安装的是 Docker Desktop（包含 Docker 客户端、守护进程和图形界面），适合普通用户使用。
+- brew install docker 安装的是 Docker 客户端工具，不包含 Docker 守护进程和图形界面，适合开发者或者有特殊需求的用户。
 ```
 #切换用户
 su zlz <br/>
@@ -154,7 +161,7 @@ sudo apt install docker.io <br/>
 #验证是否安装成功:docker版本&docker信息
 
 #docker版本
-docker version <br/>
+docker --version <br/>
 
 #docker信息
 docker info <br/>

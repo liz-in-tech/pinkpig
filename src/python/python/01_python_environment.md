@@ -381,4 +381,11 @@ cat requirements.txt
 ![使用逻辑运算符指定依赖的版本](images/limit_version.png)
 
 ## 5. Poetry--python包管理工具
-https://blog.csdn.net/Python966/article/details/134134702
+### macOS安装Poetry
+```
+brew install poetry
+```
+
+### 下载包
+```poetry install
+```
