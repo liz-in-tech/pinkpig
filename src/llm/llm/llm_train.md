@@ -60,9 +60,9 @@ Google Colab的默认硬件加速器设置是“None”，即默认是CPU
 !git clone xxx (和平时clone一样，只多了！)
 
 如果是私有仓库，需要有token，替换https://github.com/为如下
-
+```
 !git clone [https://<your_token>:x-oauth-basic@github.com/](https://%3Cyour_token%3E:x-oauth-basic@github.com/)><username>/<repository>.git
-
+```
 获取github的token：Github账户设置页面的"Developer settings" -> "Personal access tokens"生成一个新的命名为"colab"的token
 
 
