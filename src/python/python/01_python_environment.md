@@ -381,11 +381,25 @@ cat requirements.txt
 ![使用逻辑运算符指定依赖的版本](images/limit_version.png)
 
 ## 5. Poetry--python包管理工具
-### macOS安装Poetry
+### 5.1. 简介
+poetry是python的依赖和包管理工具（Poetry is a tool for dependency management and packaging in Python.）。类似于java领域的maven和gradle。
+
+### 5.2. 安装
+Note：如果有SSL报错，需要关闭vpn
+#### 5.2.1. pip安装Poetry
+```
+pip install poetry
+```
+#### 5.2.2. macOS安装Poetry
 ```
 brew install poetry
 ```
 
-### 下载包
-```poetry install
+### 5.3. 验证安装成功
+```
+poetry --version
+```
+### 5.4. 下载包
+```
+poetry install xxx
 ```

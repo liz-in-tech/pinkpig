@@ -18,9 +18,11 @@ icon: lightbulb
 
 2. [真实面试题 & 大语言模型基础 & 大语言模型架构 & 训练数据集 & 分布式训练 & 有监督微调 & 推理 & 强化学习 & RAG & 大语言模型评估 & 大语言模型应用](https://github.com/wdndev/llm_interview_note)
 
-3. [LLM面经: RAG & LLM & 多模态 & Tokenizer & 分布式训练 & 推理加速 & 增量预训练 & 显存 & 蒸馏](https://v11enp9ok1h.feishu.cn/wiki/MqKpwDsKaiRy0kkQZtQcJ4fJnLc)
+3. [腾讯云开发者社区LLM算法工程师面试题](https://cloud.tencent.com/developer/article/2357915)
 
-4. [Python的面试题](https://github.com/taizilongxu/interview_python)
+4. [LLM面经: RAG & LLM & 多模态 & Tokenizer & 分布式训练 & 推理加速 & 增量预训练 & 显存 & 蒸馏](https://v11enp9ok1h.feishu.cn/wiki/MqKpwDsKaiRy0kkQZtQcJ4fJnLc)
+
+5. [Python的面试题](https://github.com/taizilongxu/interview_python)
 
 ## 硬核底层原理
 1. [LLM底层原理和代码一一对应教学: transformers & LORA & optimizers & diffusion & gans &reinforcement learning & Normalization Layers](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
