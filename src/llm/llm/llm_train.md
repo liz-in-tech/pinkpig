@@ -87,19 +87,9 @@ cd approaches
 
 ![](images/moda_workdir.png)
 
-modelscope 是transformers库的封装
-
-huggingface — transformers
-
 https://huggingface.co/docs/transformers/en/index
 
 https://python.langchain.com/v0.1/docs/modules/data_connection/document_loaders/pdf/
 
 watch -n 0.1 nvidia-smi
 
-魔搭对标国外的HuggingFace
-
-AutoDL
-
-## 5. 下载模型
-HuggingFace & 魔搭
