@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # 预训练数据集 FindWeb
 https://huggingface.co/datasets/HuggingFaceFW/fineweb
 

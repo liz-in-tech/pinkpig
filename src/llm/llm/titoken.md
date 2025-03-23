@@ -1,7 +1,7 @@
 ---
 icon: lightbulb
 ---
-## Token计算
+# Token计算
 
 what：一个字符串算多少token
 

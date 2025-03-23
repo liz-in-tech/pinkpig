@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # Learn LLM
 
 ## 模型的应用
