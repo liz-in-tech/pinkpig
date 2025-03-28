@@ -1,12 +1,5 @@
 ---
 icon: lightbulb
-date: 2024-06-01
-
-
-category:
-  - LLM
-tag:
-  - LLM
 ---
 # Llama进阶
 

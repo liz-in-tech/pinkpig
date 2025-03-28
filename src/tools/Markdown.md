@@ -6,6 +6,9 @@ icon: lightbulb
 &#10005;  
 &#10003;
 
+## 公式速查
+https://rpruim.github.io/s341/S19/from-class/MathinRmd.html
+
 ## 链接
 [OpenAI:A Survey of Techniques for Maximizing LLM Performance](https://www.youtube.com/watch?v=ahnGLM-RC1Y)
 ## md基本语法
