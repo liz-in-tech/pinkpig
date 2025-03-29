@@ -21,6 +21,7 @@ icon: lightbulb
             - 向量维度非常大，且每个向量是稀疏的
             - 不同词的one-hot编码向量是正交的，在向量空间中无法表示近似关系，即使两个含义相近的词，它们的词向量点积也为0
     - Embedding (词嵌入，词向量)
+        - 主要方法包括 Word2Vec、GloVe 和 FastText
         - 用维度有限的稠密的向量来表示所有的词汇，传统的Transformer中，词嵌入有512维；BERT中，词嵌入有768维和1024维两个版本。
         - one-hot与embedding的关系 
             - 词向量就是one hot的全连接层的权重矩阵参数
