@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as a,c as _,a as e,b as o}from"./app-eS8cJyut.js";const r={},c=e("h1",{id:"对齐",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#对齐","aria-hidden":"true"},"#"),o(" 对齐")],-1),s=[c];function n(d,i){return a(),_("div",null,s)}const f=t(r,[["render",n],["__file","05_对齐.html.vue"]]);export{f as default};
