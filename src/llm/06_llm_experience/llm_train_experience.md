@@ -14,6 +14,8 @@ nvidia-smi # 查看显存
 htop # 查看内存和CPU
 ```
 ## 2. vscode remote ssh
+Note: 如果使用镜像创建，第一次拉取镜像需要超级长的时间
+
 Step1:安装vscode插件remote-ssh
 
 ![](images/vscode_remote_ssh.png)
@@ -29,6 +31,11 @@ Step3: 查看cuda版本命令
 ```
 nvidia-smi
 ```
+
+### 数据：阿里云盘
+
+### 镜像：CodeWithGPU
+
 ## 3. 使用Google Colab跑模型操作流程
 1.**创建一个新的 Notebook**
 
