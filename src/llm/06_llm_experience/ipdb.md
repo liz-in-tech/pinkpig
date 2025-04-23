@@ -12,7 +12,7 @@ icon: lightbulb
 | c (continue)  | keep run to next breakpoint | c |
 | r (return)    | execute until current function return | r |
 | q (quit)      | quit and kill program | q |
-| j <lineno>    | jump to specific line number (be careful) | 
+| j \<lineno>    | jump to specific line number (be careful) | 
 
 
 ## breakpoint
