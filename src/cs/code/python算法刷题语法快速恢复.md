@@ -16,6 +16,19 @@ None  空
 nonlocal 局部函数用全局变量
 math.inf 最大值
 ```
+### == 与 is
+- ==
+    - 除了**自定义对象**和**None**，==可以比较任何数据类型的值相等
+        - 数字
+        - 字符/字符串
+        - list/set/dict/tuple/...
+    - 原理
+        - ==其实调用的是`__eq__`方法，内置类型都实现了自己的`__eq__`
+- is
+    - None用is进行比较，不要用"== None"
+    - 自定义对象
+        - 用is就是比较地址
+        - 用==如果写了`__eq__`，则比较值，否则==等同于is，在比较对象的地址
 
 ## 选择
 ```
@@ -169,16 +182,19 @@ q = collections.deque() # 定义
 q = collections.deque([beginWord]) # 定义并初始化，传入一个数组进行初始化
 q.pop() # 将队列最后一个出队 
 q.popleft() # 将队列第一个出队  
-q.append() # 入队   
+q.append() # 入队 
+q[0] # 第一个元素
+q[-1] # 最后一个元素
 ```
 
-## 堆
+## 堆/优先队列
 ```
-heapq
-q = [(-nums[i], i) for i in range(k)]
-heapq.heapify(q)
-heapq.heappush(q, (-nums[i], i))
-heapq.heappop(q)
+q = [(-nums[i], i) for i in range(k)] # 默认是最小堆，通过取相反数来模拟最大堆
+# 这里每个元素是一个元组，其实堆的元素可以是任何可以比较大小的数据类型
+# 元组怎么比较大小：先按元组的第一个元素（也就是下标0）来比较大小，只有第一个元素相等时，才会继续比较第二个元素，依此类推
+heapq.heapify(q) # 将一个普通列表转成堆，q依旧可以用列表的所有操作
+heapq.heappush(q, (-nums[i], i)) # 插入元素
+heapq.heappop(q) # 弹出最小元素
 ```
 
 ## 图
@@ -197,6 +213,7 @@ for value in adj[key]:
 use = set()
 use.add(num)
 use.remove(num)
+use.pop()
 ```
 
 ## 词典/哈希表
@@ -207,7 +224,15 @@ dict = {beginWord: 0}
 dict[target-item] # 取值  
 dict[item] = index # 赋值  
 if target-item in dict # 判断key是否存在  
-dict.pop(key) # 去除
+dict.pop(key) # 去除key方式一
+del dict[key] # 去除key方式二
+
+dict.keys() # 所有key
+
+dict.values() # 所有value
+
+for k,v in dict.items(): # 每一项kv
+    print(k, v)
 ```
 有序词典
 ```
@@ -226,6 +251,22 @@ orderedDict.popitem(last=False)
 ```
 random.choice(list) #从列表中随机选择一项
 random_index = random.randint(left, right) # 从[left，right]中随机选择一项（左闭右闭）
+```
+## 输入输出
+```
+import sys
+
+# 更快地读一行
+line = sys.stdin.readline().strip() # # 一行一行读
+
+lines = sys.stdin.read().splitlines() # 一次性把所有数据读完
+
+parts = sys.stdin.readline().strip().split() # 拆分为多列
+
+nums = list(map(int, sys.stdin.readline().strip().split())) # 拆分为多列数字
+
+for line in sys.stdin: # 一行一行读
+    print(line)
 ```
 
 ## 细节
