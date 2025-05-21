@@ -129,6 +129,28 @@ s[::-1] # 反转
 " ".join(nums) # 数组转字符串，在数字之间用空格分隔
 ```
 
+分割字符串
+- 用s.split()分割（分隔符默认是空格，也可以是其他字符，但不可以是空字符）
+- 用list(s)分割，分割后为字符数组，用于将可迭代对象（iterable） 转换为列表
+
+```
+>>> s = "hello"
+>>> print(s.split())
+['hello']
+>>> s1 = "hello world"
+>>> print(s1.split())
+['hello', 'world']
+>>> print(s.split(''))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: empty separator
+>>> print(list(s))
+['h', 'e', 'l', 'l', 'o']
+>>> print(list(s1))
+['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+>>> 
+```
+
 ## 数组
 ```
 dp = [0 for _ in range(size)] # 定义方式1
@@ -189,12 +211,13 @@ q[-1] # 最后一个元素
 
 ## 堆/优先队列
 ```
-q = [(-nums[i], i) for i in range(k)] # 默认是最小堆，通过取相反数来模拟最大堆
+heap = [(-nums[i], i) for i in range(k)] # heap是一个列表
+# 默认是最小堆，通过取相反数来模拟最大堆
 # 这里每个元素是一个元组，其实堆的元素可以是任何可以比较大小的数据类型
 # 元组怎么比较大小：先按元组的第一个元素（也就是下标0）来比较大小，只有第一个元素相等时，才会继续比较第二个元素，依此类推
-heapq.heapify(q) # 将一个普通列表转成堆，q依旧可以用列表的所有操作
-heapq.heappush(q, (-nums[i], i)) # 插入元素
-heapq.heappop(q) # 弹出最小元素
+heapq.heapify(heap) # 堆化，如果heap为空，则不需要这一步，直接使用heappush和heappop就好
+heapq.heappush(heap, (-nums[i], i)) # 插入元素
+heapq.heappop(heap) # 弹出堆顶
 ```
 
 ## 图
