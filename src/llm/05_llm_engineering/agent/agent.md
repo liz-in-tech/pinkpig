@@ -11,6 +11,10 @@ tag:
 
 # Agent
 <!-- more -->
+## AI Agent vs Agentic AI
+- 生成式 AI： 能「说」，不能「做」，被动，无工具，无协作。
+- AI Agent： 能「说」，能用「工具」独立「做」简单事，任务内自主，单体，有工具，无协作。
+- Agentic AI： 能「说」，能让「团队」用「工具」协同「做」复杂事，系统级自主，多 Agent，有工具，强协作，有编排，有共享记忆。
 
 ## AI Agent4种设计模式
 https://blog.csdn.net/weixin_40774379/article/details/139133605
@@ -53,5 +57,6 @@ ReAct = Reasoning + Act
 在思维链基础上加上工具的使用，交替思考和行动，思考->行动->思考->行动..
 
 ReAct的实现核心是Prompt的定义
+
 
 
