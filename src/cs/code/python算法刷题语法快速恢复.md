@@ -276,20 +276,80 @@ random.choice(list) #从列表中随机选择一项
 random_index = random.randint(left, right) # 从[left，right]中随机选择一项（左闭右闭）
 ```
 ## 输入输出
-```
-import sys
-
-# 更快地读一行
+```python
 line = sys.stdin.readline().strip() # # 一行一行读
-
-lines = sys.stdin.read().splitlines() # 一次性把所有数据读完
 
 parts = sys.stdin.readline().strip().split() # 拆分为多列
 
-nums = list(map(int, sys.stdin.readline().strip().split())) # 拆分为多列数字
+nums = list(map(int, sys.stdin.readline().strip().split())) # 数字列表
 
-for line in sys.stdin: # 一行一行读
-    print(line)
+n, m = map(int, line.strip().split()) # 多个数字变量
+```
+```python
+"""
+3 5
+qwerd
+1 x
+2 n
+0 u
+4 8
+drruubbf
+4 i
+3 i
+2 e
+1 r
+1 4
+wqqq
+2 k
+"""
+
+import sys
+
+while True:
+   line = sys.stdin.readline()
+   if not line:
+      break
+   n, m = map(int, line.strip().split())
+   s = sys.stdin.readline().strip()
+   ops = []
+   for _ in range(n):
+      op_line = sys.stdin.readline().strip()
+      index, char = op_line.split()
+      ops.append((int(index), char))
+   print("处理一个测试用例：")
+   print("n =", n, "m =", m)
+   print("字符串:", s)
+   print("操作:", ops)
+   print("---")
+```
+```python
+import sys
+
+while True:
+   try:
+      line = sys.stdin.readline()
+      n, m = map(int, line.strip().split())
+      s = sys.stdin.readline().strip()
+      ops = []
+      for _ in range(n):
+         op_line = sys.stdin.readline().strip()
+         index, char = op_line.split()
+         ops.append((int(index), char))
+      print("处理一个测试用例：")
+      print("n =", n, "m =", m)
+      print("字符串:", s)
+      print("操作:", ops)
+      print("---")
+   except Exception as e:
+      break
+```
+## 捕获异常
+```python
+try:
+    # 有可能抛出异常的代码
+    result = 10 / 0
+except Exception as e:
+    print("发生错误：", e)
 ```
 
 ## 细节
