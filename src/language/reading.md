@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # Reading
 ## 语法考点
 - 逻辑关系：上下文结构搭配

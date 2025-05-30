@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # shadow
 ## 1
 - https://www.youtube.com/watch?v=uNCFRI8i_J0

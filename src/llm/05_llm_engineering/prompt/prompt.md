@@ -1,4 +1,7 @@
-### Prompt（提示）
+---
+icon: lightbulb
+---
+# Prompt（提示）
 Prompt Engineer（提示工程）
 
 #### 提示学习

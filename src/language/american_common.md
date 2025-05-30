@@ -1,4 +1,6 @@
-
+---
+icon: lightbulb
+---
 # 美国政治法律常识
 
 check and balance 制衡

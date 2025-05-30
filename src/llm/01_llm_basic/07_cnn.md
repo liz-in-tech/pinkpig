@@ -1,3 +1,6 @@
+---
+icon: lightbulb
+---
 # CNN
 
 1.CNN的经典模型
