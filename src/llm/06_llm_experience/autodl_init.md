@@ -125,7 +125,10 @@ https://autodl.com/docs/save_money/
 - （必要）Ctrl + Shift + P -> python:select interpreter -> 添加python解释器
     - 测试补全
     - 查看跳转
-- （非必要）debug: 项目根目录下，创建.vscode文件夹，里面的launch.json内容如上
+- （必要）debug: 
+    - pip install debugpy
+    - 项目根目录下，创建.vscode文件夹，里面的launch.json内容如上
+    - 点击按钮"Python Debugger: Debug using launch.json"
 ```json
 {
     "version": "0.2.0",
