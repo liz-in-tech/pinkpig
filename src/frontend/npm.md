@@ -68,19 +68,7 @@ ctrl+shift+p-》shell   <br/>
 1）ESLint：检查语法，校验代码规则 <br/>
 2）Prettier：代码格式化工具 <br/>
 
-4.熟悉vscode快捷键 <br/>
-ctrl+shift+p：弹出命令行界面 <br/>
-全局文件跳转 <br/>
-全局全文搜索 <br/>
-快速展示隐藏集成终端 <br/>
-代码提示建议 <br/>
-快速切换上一次的编辑位置 <br/>
-快速选择下一个内容 <br/>
-多行一并修改 <br/>
-快速格式化 <br/>
-快速修复eslint错误   Ctrl+Shift+P    搜索eslint，找到fix   也可以用快捷键 <br/>
-
-5.定义代码块（代码模板）snip <br/>
+4.定义代码块（代码模板）snip <br/>
 
 目录 <br/>
 package.json   描述文件，描述项目的一些信息 <br/>
